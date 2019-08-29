@@ -28,7 +28,7 @@ poor overlap between the evaluation metric and human judgement. An appendix on t
 
 This paper proposed to use pre-trained BERT model as the evaluation metric for text generation (MT). It shows better correlation with human judgement compared to other methods.
 
-### Previous Works
+### Problems of Existing Works and Solutions
 * fail to robustly match paraphrases -> use contextualized word embedding to represent each word
 * lack of distinction between tokens that are important or unimportant to the meaning of the sentence (e.g. articles might not very important) -> use tf-idf to weight words
 * n-gram models fail to capture distant dependencies and penalize semantically- critical ordering changes (A because B vs B because A)-> bert is good at capturing these relations 
